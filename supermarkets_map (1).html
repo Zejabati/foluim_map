@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a63de80efb9dc68c528ed743505b0b5a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a63de80efb9dc68c528ed743505b0b5a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a63de80efb9dc68c528ed743505b0b5a = L.map(
+                "map_a63de80efb9dc68c528ed743505b0b5a",
+                {
+                    center: [30.661364, 103.942509],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_774d57958da753e2fefb95a53acbd059 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var marker_39fb009f5770d9267bb926d766acad3e = L.marker(
+                [30.675436, 104.074714],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_cf578e82e1b6e6706763e1f6a77cb27d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_39fb009f5770d9267bb926d766acad3e.setIcon(icon_cf578e82e1b6e6706763e1f6a77cb27d);
+        
+    
+        var popup_4fec8e300597bd94fcebbe4e5c7ba3f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aad7412685ef51e70d79ea9a0a3c3f3 = $(`<div id="html_5aad7412685ef51e70d79ea9a0a3c3f3" style="width: 100.0%; height: 100.0%;">Supermarket 1: Latitude = 30.675436, Longitude = 104.074714</div>`)[0];
+                popup_4fec8e300597bd94fcebbe4e5c7ba3f7.setContent(html_5aad7412685ef51e70d79ea9a0a3c3f3);
+            
+        
+
+        marker_39fb009f5770d9267bb926d766acad3e.bindPopup(popup_4fec8e300597bd94fcebbe4e5c7ba3f7)
+        ;
+
+        
+    
+    
+            var marker_41200e0619c8f3c0c1388ece089267a4 = L.marker(
+                [30.664364, 104.051509],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_ba215b28c2fa6c58cbc88783db66d8b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_41200e0619c8f3c0c1388ece089267a4.setIcon(icon_ba215b28c2fa6c58cbc88783db66d8b1);
+        
+    
+        var popup_1c0fe67341124994e6957a9331e78dc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5f1a278d2f6dfb5856ca76173347715 = $(`<div id="html_f5f1a278d2f6dfb5856ca76173347715" style="width: 100.0%; height: 100.0%;">Supermarket 2: Latitude = 30.664364, Longitude = 104.051509</div>`)[0];
+                popup_1c0fe67341124994e6957a9331e78dc6.setContent(html_f5f1a278d2f6dfb5856ca76173347715);
+            
+        
+
+        marker_41200e0619c8f3c0c1388ece089267a4.bindPopup(popup_1c0fe67341124994e6957a9331e78dc6)
+        ;
+
+        
+    
+    
+            var marker_46217ce95b4e067100a42b63774ed245 = L.marker(
+                [30.59453, 103.968132],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_9442aa41a8ee32c43494d933d741b992 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_46217ce95b4e067100a42b63774ed245.setIcon(icon_9442aa41a8ee32c43494d933d741b992);
+        
+    
+        var popup_47479e0621041976523f661e79d68f9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd8ccd94a5a1fe6d6d2fca1e2731f608 = $(`<div id="html_cd8ccd94a5a1fe6d6d2fca1e2731f608" style="width: 100.0%; height: 100.0%;">Supermarket 3: Latitude = 30.59453, Longitude = 103.968132</div>`)[0];
+                popup_47479e0621041976523f661e79d68f9c.setContent(html_cd8ccd94a5a1fe6d6d2fca1e2731f608);
+            
+        
+
+        marker_46217ce95b4e067100a42b63774ed245.bindPopup(popup_47479e0621041976523f661e79d68f9c)
+        ;
+
+        
+    
+    
+            var marker_251a3f3b58905cee54cad62218baaa92 = L.marker(
+                [30.537253, 104.089546],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_5d0d683a9e814560d4a26209d846ea7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_251a3f3b58905cee54cad62218baaa92.setIcon(icon_5d0d683a9e814560d4a26209d846ea7b);
+        
+    
+        var popup_3133852a81ec4281cd90dc921ddab935 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccc21cbbfdf388ef347f9077058431bd = $(`<div id="html_ccc21cbbfdf388ef347f9077058431bd" style="width: 100.0%; height: 100.0%;">Supermarket 4: Latitude = 30.537253, Longitude = 104.089546</div>`)[0];
+                popup_3133852a81ec4281cd90dc921ddab935.setContent(html_ccc21cbbfdf388ef347f9077058431bd);
+            
+        
+
+        marker_251a3f3b58905cee54cad62218baaa92.bindPopup(popup_3133852a81ec4281cd90dc921ddab935)
+        ;
+
+        
+    
+    
+            var marker_717ec3b5f90f9ab8da304aa7bc26ec87 = L.marker(
+                [30.669615, 104.061301],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_60f5bae31942ccec74aacf90d791cfca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_717ec3b5f90f9ab8da304aa7bc26ec87.setIcon(icon_60f5bae31942ccec74aacf90d791cfca);
+        
+    
+        var popup_1bf80cf175d39b0abfbf46354261fe8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23752a5c530a78f5efa56ac6e75786c1 = $(`<div id="html_23752a5c530a78f5efa56ac6e75786c1" style="width: 100.0%; height: 100.0%;">Supermarket 5: Latitude = 30.669615, Longitude = 104.061301</div>`)[0];
+                popup_1bf80cf175d39b0abfbf46354261fe8d.setContent(html_23752a5c530a78f5efa56ac6e75786c1);
+            
+        
+
+        marker_717ec3b5f90f9ab8da304aa7bc26ec87.bindPopup(popup_1bf80cf175d39b0abfbf46354261fe8d)
+        ;
+
+        
+    
+    
+            var marker_fd78b519e453093680b6f5bdd27ea405 = L.marker(
+                [30.67058, 104.038877],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_d2d7a796bab788ef2b8292c5c8fdca29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fd78b519e453093680b6f5bdd27ea405.setIcon(icon_d2d7a796bab788ef2b8292c5c8fdca29);
+        
+    
+        var popup_f0d585fb64c3456bf4dd73d4b78ae948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_603dcdc4e59c686c68726bf4f48c7067 = $(`<div id="html_603dcdc4e59c686c68726bf4f48c7067" style="width: 100.0%; height: 100.0%;">Supermarket 6: Latitude = 30.67058, Longitude = 104.038877</div>`)[0];
+                popup_f0d585fb64c3456bf4dd73d4b78ae948.setContent(html_603dcdc4e59c686c68726bf4f48c7067);
+            
+        
+
+        marker_fd78b519e453093680b6f5bdd27ea405.bindPopup(popup_f0d585fb64c3456bf4dd73d4b78ae948)
+        ;
+
+        
+    
+    
+            var marker_43ba4dd1cdfd55daa6b4945720e8a033 = L.marker(
+                [30.67055, 104.038713],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_1a7ec168b11dcfdd04e463ca7530a3c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_43ba4dd1cdfd55daa6b4945720e8a033.setIcon(icon_1a7ec168b11dcfdd04e463ca7530a3c7);
+        
+    
+        var popup_be5a438d79663c92500a2bc8ea314331 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d957f1dade233b7a4befe65b3a98494 = $(`<div id="html_3d957f1dade233b7a4befe65b3a98494" style="width: 100.0%; height: 100.0%;">Supermarket 7: Latitude = 30.67055, Longitude = 104.038713</div>`)[0];
+                popup_be5a438d79663c92500a2bc8ea314331.setContent(html_3d957f1dade233b7a4befe65b3a98494);
+            
+        
+
+        marker_43ba4dd1cdfd55daa6b4945720e8a033.bindPopup(popup_be5a438d79663c92500a2bc8ea314331)
+        ;
+
+        
+    
+    
+            var marker_18031b3db0677d0c3c7c555a1ea1f083 = L.marker(
+                [30.67025, 104.040545],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_5ed7a746131bbccf0a3c6cd022ab5f20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_18031b3db0677d0c3c7c555a1ea1f083.setIcon(icon_5ed7a746131bbccf0a3c6cd022ab5f20);
+        
+    
+        var popup_6cb97e7cb6dcd685b943baf0322e2ebd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efc7f2226a7c85984bf0641cae7db432 = $(`<div id="html_efc7f2226a7c85984bf0641cae7db432" style="width: 100.0%; height: 100.0%;">Supermarket 8: Latitude = 30.67025, Longitude = 104.040545</div>`)[0];
+                popup_6cb97e7cb6dcd685b943baf0322e2ebd.setContent(html_efc7f2226a7c85984bf0641cae7db432);
+            
+        
+
+        marker_18031b3db0677d0c3c7c555a1ea1f083.bindPopup(popup_6cb97e7cb6dcd685b943baf0322e2ebd)
+        ;
+
+        
+    
+    
+            var marker_023d5f424c88d23a2984352cebec2614 = L.marker(
+                [30.670183, 104.040674],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_9a52cc2550a9c23096d12d2d5ec5bbbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_023d5f424c88d23a2984352cebec2614.setIcon(icon_9a52cc2550a9c23096d12d2d5ec5bbbb);
+        
+    
+        var popup_a98ffa3fbb5a640f804267bbc6389b97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb74aeacd2defb043730dc19de1ada50 = $(`<div id="html_bb74aeacd2defb043730dc19de1ada50" style="width: 100.0%; height: 100.0%;">Supermarket 9: Latitude = 30.670183, Longitude = 104.040674</div>`)[0];
+                popup_a98ffa3fbb5a640f804267bbc6389b97.setContent(html_bb74aeacd2defb043730dc19de1ada50);
+            
+        
+
+        marker_023d5f424c88d23a2984352cebec2614.bindPopup(popup_a98ffa3fbb5a640f804267bbc6389b97)
+        ;
+
+        
+    
+    
+            var marker_fe5811f311ff42c2412db4237184878b = L.marker(
+                [30.671041, 104.038487],
+                {}
+            ).addTo(map_a63de80efb9dc68c528ed743505b0b5a);
+        
+    
+            var icon_a7c8eda0394f61113665955c8f7b6b2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fe5811f311ff42c2412db4237184878b.setIcon(icon_a7c8eda0394f61113665955c8f7b6b2f);
+        
+    
+        var popup_df473117f56e4eb98600c22875e83d2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_223de0c837bd8a0be3c61e4c8bfed497 = $(`<div id="html_223de0c837bd8a0be3c61e4c8bfed497" style="width: 100.0%; height: 100.0%;">Supermarket 10: Latitude = 30.671041, Longitude = 104.038487</div>`)[0];
+                popup_df473117f56e4eb98600c22875e83d2d.setContent(html_223de0c837bd8a0be3c61e4c8bfed497);
+            
+        
+
+        marker_fe5811f311ff42c2412db4237184878b.bindPopup(popup_df473117f56e4eb98600c22875e83d2d)
+        ;
+
+        
+    
+</script>
+</html>
